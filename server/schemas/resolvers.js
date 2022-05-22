@@ -48,7 +48,10 @@ const resolvers = {
         throw new AuthenticationError('Incorrect credentials');
       }
       return user;
-    }
+    },
+
+    /* addPost(title: "GraphQL Tutorial ") */
+
   }
 };
 
