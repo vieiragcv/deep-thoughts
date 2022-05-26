@@ -34,7 +34,9 @@ const SingleThought = props => {
         </div>
       </div>
 
-      {thought.reactionCount > 0 && <ReactionList reaction={thought.reactions} />}
+      {thought.reactionCount > 0 && (
+        <ReactionList reaction={thought.reactions} />
+      )}
     </div>
   );
 };
