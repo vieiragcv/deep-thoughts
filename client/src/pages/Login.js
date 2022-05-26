@@ -30,12 +30,13 @@ const Login = (props) => {
     catch (e) {
       console.error(e);
     }
-  };
-
-/*     setFormState({
+    setFormState({
       email: '',
       password: '',
-    }); */
+    });
+  };
+
+    
 
   return (
     <main className='flex-row justify-center mb-4'>

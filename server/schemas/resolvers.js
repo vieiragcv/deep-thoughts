@@ -73,7 +73,7 @@ const resolvers = {
         return thought;
       }
 
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError('You need to be logged in! addThought');
     },
     addReaction: async (parent, { thoughtId, reactionBody }, context) => {
       if (context.user) {
@@ -86,7 +86,7 @@ const resolvers = {
         return updatedThought;
       }
 
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError('You need to be logged in! addReaction');
     },
     addFriend: async (parent, { friendId }, context) => {
       if (context.user) {
@@ -99,7 +99,7 @@ const resolvers = {
         return updatedUser;
       }
 
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError('You need to be logged in! addFriend');
     }
   }
 };
